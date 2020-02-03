@@ -32,7 +32,7 @@ export default function TodoInput(props) {
       })}
       type="text"
       placeholder={props.placeholder}
-      autoFocus="true"
+      autoFocus={true}
       value={text}
       onBlur={handleBlur}
       onChange={handleInput}
