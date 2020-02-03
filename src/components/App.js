@@ -2,18 +2,8 @@ import React, { useState } from 'react'
 import Header from './Header'
 import MainSection from './MainSection'
 
-const initialState = [
-  {
-    text: 'React ES6 TodoMVC',
-    completed: false,
-    id: 0
-  }
-]
-
 export default function App() {
   const [todos, setTodos] = useState([]);
-  const [gameID, setGameID] = useState(null);
-  const [player, setPlayer] = useState(0);
 
   function addTodo(text) {
     setTodos(prev => [
